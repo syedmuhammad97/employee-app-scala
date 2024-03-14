@@ -1,0 +1,30 @@
+.button{
+    -fx-border-radius: 5px;
+    -fx-border: 1px solid black;
+    -fx-padding: 10px 20px;
+    -fx-background-color: transparent;
+    -fx-background-radius: 15;
+    -fx-font-size: 2em;
+    -fx-cursor: pointer;
+    -fx-font-family:Verdana;
+}
+
+.button:hover{
+    -fx-background-color:transparent;
+    -fx-border-color: #7FFFD4;
+    -fx-border-width:2px;
+}
+
+.label{
+    -fx-font-family:Verdana;
+    -fx-font-size: 3em;
+}
+
+.anchorPane{
+    -fx-background-color:#A9A9A9;
+}
+
+
+#back{
+    -fx-background-color: #FFF8DC;
+}
