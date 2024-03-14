@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.view.PartTimeModificationController">
+   <children>
+      <Label layoutX="144.0" layoutY="25.0" text="PART-TIME MODIFICATION">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="122.0" text="New Department :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="177.0" text="New Name : ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="231.0" text="New Total Working Hour :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="283.0" text="New Food Allowance :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="employeeDepartment" layoutX="205.0" layoutY="120.0" prefHeight="25.0" prefWidth="267.0" promptText="Choose Department" />
+      <TextField fx:id="tfNewName" layoutX="205.0" layoutY="175.0" prefHeight="25.0" prefWidth="324.0" />
+      <TextField fx:id="tfNewHours" layoutX="205.0" layoutY="229.0" prefHeight="25.0" prefWidth="121.0" />
+      <TextField fx:id="tfNewFoodAllowance" layoutX="205.0" layoutY="281.0" prefHeight="25.0" prefWidth="121.0" />
+      <Label layoutX="452.0" layoutY="208.0" text="Photo">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="employeeImage" fitHeight="150.0" fitWidth="200.0" layoutX="372.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="btSubmit" layoutX="24.0" layoutY="330.0" mnemonicParsing="false" onAction="#submitButton" text="Submit" />
+      <Button fx:id="btBack" layoutX="197.0" layoutY="330.0" mnemonicParsing="false" onAction="#showMainMenu" prefHeight="25.0" prefWidth="46.0" text="Back" />
+      <Button fx:id="btChoosePhoto" layoutX="255.0" layoutY="330.0" mnemonicParsing="false" onAction="#choosePhotoButton" text="Choose Photo" />
+      <Button fx:id="btPreview" layoutX="91.0" layoutY="330.0" mnemonicParsing="false" onAction="#previewButton" text="Preview Detail" />
+      <Label layoutX="24.0" layoutY="80.0" text="ID: ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="employeeID" layoutX="205.0" layoutY="78.0" prefWidth="150.0" promptText="Choose ID" />
+   </children>
+</AnchorPane>
